@@ -1,18 +1,9 @@
 server:
   port: 9102
 
-spring:
-  config:
-    activate:
-      on-profile: default
-  cloud:
-    config:
-      import-check:
-        enabled: false
-
-eureka:
+2eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      default-zone: http://localhost:9102/
+      default-zone: http://localhost:9102/eureka/
