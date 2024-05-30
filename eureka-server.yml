@@ -2,8 +2,6 @@ server:
   port: 9102
 
 spring:
-  application:
-    name: microservice-produits
   cloud:
     config:
       import-check:
@@ -11,5 +9,5 @@ spring:
 
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    register-with-eureka: false
+    fetch-registry: false
