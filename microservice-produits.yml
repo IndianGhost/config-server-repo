@@ -16,6 +16,11 @@ spring:
     username: sa
     password: ""
 
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:9102/eureka/
+
 # Nos configurations
 mes-configs:
   limitDeProduits: 5

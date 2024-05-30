@@ -2,6 +2,9 @@ server:
   port: 9102
 
 spring:
+  config:
+    activate:
+      on-profile: default
   cloud:
     config:
       import-check:
@@ -11,3 +14,5 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url:
+      default-zone: http://localhost:9102/
