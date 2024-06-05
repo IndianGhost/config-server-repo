@@ -1,3 +1,8 @@
 server:
   error:
     include-message: always
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9102/eureka/
